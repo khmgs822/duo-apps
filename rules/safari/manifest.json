@@ -1,46 +1,73 @@
 {
- "version": "202611280030",
+ "version": "202611280316",
  "sources": [
   {
-   "commit": "a5e081e6a0f4112c57547f4f2e96c82a10d80ab3",
-   "lineCount": 79428,
    "name": "EasyList",
-   "sha256": "b441974ac035a9420524bf1f58a58d80390a22464aea6e5977439e037b302062",
    "url": "https://easylist.to/easylist/easylist.txt",
+   "license": "GPLv3 / CC BY-SA 3.0",
    "version": "202611271419"
   },
   {
-   "commit": "a5e081e6a0f4112c57547f4f2e96c82a10d80ab3",
-   "lineCount": 57657,
-   "name": "EasyPrivacy",
-   "sha256": "f7b3963f5b2ed1981a1c2cb151725edb51b1fde858931a728362c0fe36b35bb1",
-   "url": "https://easylist.to/easylist/easyprivacy.txt",
-   "version": "202611271419"
-  },
-  {
-   "commit": "",
-   "lineCount": 109,
-   "name": "Mochikae 日本向け",
-   "sha256": "662c1ef4eb2be856c6d4d514a81afba83587e055cc668a0f64a857518df0eaf0",
+   "name": "Mochikae 日本向けの規則",
    "url": "https://khmgs822.github.io/duo-apps/rules/jp.txt",
+   "license": "necotoybox",
    "version": "202611280"
+  },
+  {
+   "name": "EasyPrivacy",
+   "url": "https://easylist.to/easylist/easyprivacy.txt",
+   "license": "GPLv3 / CC BY-SA 3.0",
+   "version": "202611271419"
+  },
+  {
+   "name": "Fanboy's Annoyance List",
+   "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+   "license": "CC BY 3.0",
+   "version": "202611280100"
+  },
+  {
+   "name": "URLhaus Malicious URL Blocklist (malware-filter)",
+   "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt",
+   "license": "CC0 / MIT",
+   "version": "2026-11-28T00:10:47Z"
   }
  ],
  "parts": [
   {
    "file": "rules-000.json",
-   "sha256": "0bb4ab7896e7c4307e95ad6ad43551a0265d7aef221db891753765b280c0c842",
-   "count": 43795
+   "name": "広告",
+   "sha256": "1c7194a4124798b64b93bc2295561cdfe29355ac3ecd63ede2533fd0feabea9f",
+   "count": 50498
   },
   {
    "file": "rules-001.json",
-   "sha256": "0d004f03c8b8965a06158e33331405bc58d77a278bebcfe1e3706cdee96f7a8b",
-   "count": 43795
+   "name": "広告の跡",
+   "sha256": "1e5d3806736455cdc7b85b749c9a8ccd3ca7e71414f13db9613bdae5e602721f",
+   "count": 23527
   },
   {
    "file": "rules-002.json",
-   "sha256": "62c8692b34dbfb56a2848ce974d048bcb00270d85529aba6fa82727bfbf6c5d0",
-   "count": 43795
+   "name": "日本向け",
+   "sha256": "6d71d6128bcda173754f09e17dfb64369c850b5dc55b7c6870dd7ecd6d053107",
+   "count": 92
+  },
+  {
+   "file": "rules-003.json",
+   "name": "追跡",
+   "sha256": "777264d474896aa3ec48596c8decfc43bd5ed2aca08d9f5e4ac4b543ecc11f7b",
+   "count": 56130
+  },
+  {
+   "file": "rules-004.json",
+   "name": "迷惑な表示",
+   "sha256": "544299bffcb0ac5dd4d45b212b3bc1c85239144c76b19da8357574f8958ef579",
+   "count": 49316
+  },
+  {
+   "file": "rules-005.json",
+   "name": "危険なサイト",
+   "sha256": "cd3a83894dd44b4b265bfe1703f58c0159329d6fd66402b19682914897eb683e",
+   "count": 1983
   }
  ]
 }
