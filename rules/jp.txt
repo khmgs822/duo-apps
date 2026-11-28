@@ -1,4 +1,5 @@
 ! Title: Mochikae 日本向けの規則
+! Version: 202611280
 ! 作り方: 日本のよく見られるサイト（tools/sites.txt）を iPhone の Safari のふりをして開き（tools/crawl.js）、
 !         世界向けの一覧（EasyList・EasyPrivacy）で止まらない第三者の読み込みを数え（tools/coverage.py）、
 !         広告・追跡のものだけを necotoybox が自分で見て選んだ。他社の一覧は写していない。
