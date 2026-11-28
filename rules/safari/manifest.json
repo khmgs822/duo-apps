@@ -1,0 +1,46 @@
+{
+ "version": "202611280030",
+ "sources": [
+  {
+   "commit": "a5e081e6a0f4112c57547f4f2e96c82a10d80ab3",
+   "lineCount": 79428,
+   "name": "EasyList",
+   "sha256": "b441974ac035a9420524bf1f58a58d80390a22464aea6e5977439e037b302062",
+   "url": "https://easylist.to/easylist/easylist.txt",
+   "version": "202611271419"
+  },
+  {
+   "commit": "a5e081e6a0f4112c57547f4f2e96c82a10d80ab3",
+   "lineCount": 57657,
+   "name": "EasyPrivacy",
+   "sha256": "f7b3963f5b2ed1981a1c2cb151725edb51b1fde858931a728362c0fe36b35bb1",
+   "url": "https://easylist.to/easylist/easyprivacy.txt",
+   "version": "202611271419"
+  },
+  {
+   "commit": "",
+   "lineCount": 109,
+   "name": "Mochikae 日本向け",
+   "sha256": "662c1ef4eb2be856c6d4d514a81afba83587e055cc668a0f64a857518df0eaf0",
+   "url": "https://khmgs822.github.io/duo-apps/rules/jp.txt",
+   "version": "202611280"
+  }
+ ],
+ "parts": [
+  {
+   "file": "rules-000.json",
+   "sha256": "0bb4ab7896e7c4307e95ad6ad43551a0265d7aef221db891753765b280c0c842",
+   "count": 43795
+  },
+  {
+   "file": "rules-001.json",
+   "sha256": "0d004f03c8b8965a06158e33331405bc58d77a278bebcfe1e3706cdee96f7a8b",
+   "count": 43795
+  },
+  {
+   "file": "rules-002.json",
+   "sha256": "62c8692b34dbfb56a2848ce974d048bcb00270d85529aba6fa82727bfbf6c5d0",
+   "count": 43795
+  }
+ ]
+}
