@@ -1,0 +1,108 @@
+! Title: Mochikae 日本向けの規則
+! 作り方: 日本のよく見られるサイト（tools/sites.txt）を iPhone の Safari のふりをして開き（tools/crawl.js）、
+!         世界向けの一覧（EasyList・EasyPrivacy）で止まらない第三者の読み込みを数え（tools/coverage.py）、
+!         広告・追跡のものだけを necotoybox が自分で見て選んだ。他社の一覧は写していない。
+! ページを見るのに要るもの（字形・jQuery・画像の置き場・Yahoo! の部品 s.yimg.jp・YouTube・有料記事の Piano・同意の窓）は止めない。
+! 2026-11-28 初版（98 サイト）
+
+! ── 広告の配信・入札（日本の会社）
+||yads.c.yimg.jp^
+||b92.yahoo.co.jp^
+||b99.yahoo.co.jp^
+||cksync.yahoo.co.jp^
+||popin.cc^
+||flvcdn.net^
+||fluctssp.smt.docomo.ne.jp^
+||sp-gn.com^
+||relaido.jp^
+||bance.jp^
+||adstirservice.com^
+||miyuki-web.net^
+||ademon.net^
+||jp1media.com^
+||lmadps.jp^
+||gacraft.jp^
+||compass-fit.jp^
+||stright.bizris.com^
+||ust-adc.com^
+||liftdsp.com^
+||slim02.jp^
+||flux-cdn.com^
+||a.flux.jp^
+||staff.livedoor.blog/slot-
+||getallmedia.com^
+
+! ── 広告の配信・入札（海外の会社で、日本のサイトでよく見るもの）
+||inmobi.com^
+||goldspotmedia.com^
+||html-load.com^
+||qvdt3feo.com^
+||rtb.mx^
+||adsdkprod.azureedge.net^
+||bids.ws^
+||missena.io^
+||loudecho.ai^
+||pmbmonetize.live^
+||pubmatic.bbvms.com^
+||spot.im/pixels/
+||fusion-platform.com^
+||imgvc.com^
+||copper6.com^
+||authorizedvault.com^
+||vidazoo.com^
+||mintegral.com^
+||attentionxyz.com^
+||ocmthood.com^
+
+! ── 利用者を見分けて追う仕組み（ID の受け渡し・計測）
+||addlv.smt.docomo.ne.jp^
+||ltmsphrcl.net^
+||id5-tech.io^
+||privacymanager.io^
+||mygaru.com^
+||tq-tungsten.com^
+||dns-finder.com^
+||audiencedata.net^
+||ctolabperfstats.com^
+||dv.tech^
+||cxpublic.com^
+||treasuredata.com^
+||cdp.livedoor.com^
+||karte.io^
+||t.co/i/adsctp
+||analytics.twitter.com^
+||pixels.spotify.com^
+||storage.googleapis.com/prod-ampa-collect
+||capi-automation.s3.us-east-2.amazonaws.com^
+
+! ── 通知を出してと催促する窓
+||webpush.jp^
+
+! ── 世界向けの一覧で隠れず残る、空いた広告の枠（サイトごと。tools/compare.js で残ったものを見て書いた）
+delishkitchen.tv##.delish-gam-ad
+delishkitchen.tv##div[id^="category-content-ad-"]
+diamond.jp##div[id^="gpt-dol-"]
+hatena.blog,hatenablog.com##.globalPage-ad
+hochi.news##div.ad
+joshi-spa.jp##.banner_widget
+news.livedoor.com##.ads-google300
+tenki.jp##div[id^="tenki-ad-"]
+tenki.jp##div[id^="ad-home-"]
+4gamer.net##div[id^="BANNER-"]
+goal.com##[class*="layout_ad-leaderboard"]
+jprime.jp##.ad-top-header
+kurashiru.com##.browsi_component_ads
+nikkansports.com##.ad_footer_overlay
+oricon.co.jp##.top-inline-banner-wrapper
+pixiv.net##.banner-ad-footer-scale
+vogue.co.jp##[class*="AdWrapper-"]
+weblio.jp##.ad-blank
+weblio.jp##.ad_fixed_imgHigh
+
+! ── アプリへの誘導（ページの上に重なる「アプリで開く」）
+kurashiru.com###footer_banner_app
+delishkitchen.tv##.delish-floating-button
+delishkitchen.tv##.app-launch-button
+tenki.jp##.smartbanner-wrapper
+kurashiru.com##.browsi_spaside_to_app_banner
+tabelog.com##.rsttop-area-appbtn
