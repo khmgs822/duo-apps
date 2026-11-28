@@ -1,0 +1,38 @@
+! Title: Mochikae YouTube の広告（Safari）
+! Version: 202611281
+! YouTube の Web 版で、動画以外の広告（おすすめに混ざる広告・動画の下のバナー・広告の計測）を隠す・止める。
+! 動画の前や途中の広告は、本編と同じ所から届くので一覧では見分けられない（ここでは扱わない）。
+! 再生を壊さないように、動画そのもの・再生の記録（/api/stats/playback・watchtime）・字幕には触らない。
+! 要素の名前は YouTube のページの部品の名前（necotoybox が m.youtube.com・www.youtube.com を開いて確かめた）。
+
+! ── 広告の計測・表示の要求
+||youtube.com/pagead/
+||youtube.com/api/stats/ads
+||youtube.com/ptracking
+||googleads.g.doubleclick.net^
+||static.doubleclick.net^
+||ad.doubleclick.net^
+
+! ── スマホ版（m.youtube.com）の広告の部品
+youtube.com##ytm-promoted-sparkles-web-renderer
+youtube.com##ytm-promoted-sparkles-text-search-renderer
+youtube.com##ytm-promoted-video-renderer
+youtube.com##ytm-companion-ad-renderer
+youtube.com##ytm-ad-slot-renderer
+youtube.com##ytm-companion-slot
+youtube.com##ad-slot-renderer
+youtube.com##ytm-rich-item-renderer:has(ad-slot-renderer)
+youtube.com##ytm-item-section-renderer:has(ytm-promoted-sparkles-web-renderer)
+
+! ── パソコン版（www.youtube.com）の広告の部品
+youtube.com##ytd-ad-slot-renderer
+youtube.com##ytd-in-feed-ad-layout-renderer
+youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##ytd-promoted-video-renderer
+youtube.com##ytd-display-ad-renderer
+youtube.com##ytd-companion-slot-renderer
+youtube.com##ytd-banner-promo-renderer
+youtube.com##ytd-rich-item-renderer:has(ytd-ad-slot-renderer)
+youtube.com###masthead-ad
+youtube.com###player-ads
+youtube.com##.ytp-ad-overlay-container
