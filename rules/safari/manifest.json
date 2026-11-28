@@ -1,5 +1,5 @@
 {
- "version": "202611280316",
+ "version": "202611280323",
  "sources": [
   {
    "name": "EasyList",
@@ -20,10 +20,10 @@
    "version": "202611271419"
   },
   {
-   "name": "Fanboy's Annoyance List",
-   "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+   "name": "Fanboy's Social Blocking List",
+   "url": "https://secure.fanboy.co.nz/fanboy-social.txt",
    "license": "CC BY 3.0",
-   "version": "202611280100"
+   "version": "202611261000"
   },
   {
    "name": "URLhaus Malicious URL Blocklist (malware-filter)",
@@ -34,40 +34,32 @@
  ],
  "parts": [
   {
-   "file": "rules-000.json",
+   "id": "ads",
+   "file": "rules-ads.json",
    "name": "広告",
-   "sha256": "1c7194a4124798b64b93bc2295561cdfe29355ac3ecd63ede2533fd0feabea9f",
-   "count": 50498
+   "sha256": "ad049aec6220ef5a85e6fd8ffe4690d1834f0757e61c1f972c4843bc042b2e5d",
+   "count": 73862
   },
   {
-   "file": "rules-001.json",
-   "name": "広告の跡",
-   "sha256": "1e5d3806736455cdc7b85b749c9a8ccd3ca7e71414f13db9613bdae5e602721f",
-   "count": 23527
-  },
-  {
-   "file": "rules-002.json",
-   "name": "日本向け",
-   "sha256": "6d71d6128bcda173754f09e17dfb64369c850b5dc55b7c6870dd7ecd6d053107",
-   "count": 92
-  },
-  {
-   "file": "rules-003.json",
+   "id": "trackers",
+   "file": "rules-trackers.json",
    "name": "追跡",
-   "sha256": "777264d474896aa3ec48596c8decfc43bd5ed2aca08d9f5e4ac4b543ecc11f7b",
-   "count": 56130
+   "sha256": "2a378c592ae5ff5cc288691a59a15297e2d1857ceb53790d970a0c0569c64d62",
+   "count": 56128
   },
   {
-   "file": "rules-004.json",
-   "name": "迷惑な表示",
-   "sha256": "544299bffcb0ac5dd4d45b212b3bc1c85239144c76b19da8357574f8958ef579",
-   "count": 49316
+   "id": "social",
+   "file": "rules-social.json",
+   "name": "SNS のボタン",
+   "sha256": "549dc6f906fe6ce2ff52d6e48a3ee05d4732f12d8696cc782f400873556eb9c6",
+   "count": 13664
   },
   {
-   "file": "rules-005.json",
+   "id": "danger",
+   "file": "rules-danger.json",
    "name": "危険なサイト",
-   "sha256": "cd3a83894dd44b4b265bfe1703f58c0159329d6fd66402b19682914897eb683e",
-   "count": 1983
+   "sha256": "1fe6dad415382d200cf3247385f7037a3ea756dde6eeb3bbf62d5fa80b4d0cd3",
+   "count": 1981
   }
  ]
 }
